@@ -235,8 +235,6 @@ public class StrainManager {
             }
         }
     }
-
-
     /**
      * extracting from the {@code JDBC} the strain data using his name with a query.
      *
