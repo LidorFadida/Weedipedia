@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0"
+            prefWidth="1000.0" style="-fx-background-color: #E1E5C3;" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.Controller">
+    <children>
+        <ListView fx:id="resultsListView" layoutX="32.0" layoutY="254.0" prefHeight="521.0" prefWidth="345.0"/>
+        <ImageView fx:id="strainImage" fitHeight="191.0" fitWidth="200.0" layoutX="595.0" layoutY="159.0"
+                   pickOnBounds="true" preserveRatio="true">
+        </ImageView>
+        <Label fx:id="strainTitle" alignment="CENTER" layoutX="414.0" layoutY="69.0" prefHeight="45.0" prefWidth="554.0"
+               text="Strain full name" textAlignment="CENTER" AnchorPane.leftAnchor="414.0">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="400.0" layoutY="14.0" prefHeight="63.0" prefWidth="200.0" text="Weedipedia">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Label>
+        <ImageView fitHeight="55.0" fitWidth="54.0" layoutX="706.0" layoutY="588.0" pickOnBounds="true"
+                   preserveRatio="true"/>
+        <ListView fx:id="strainPositiveList" layoutX="431.0" layoutY="642.0" prefHeight="133.0" prefWidth="156.0"/>
+        <ListView fx:id="strainNegativeList" layoutX="805.0" layoutY="642.0" prefHeight="133.0" prefWidth="156.0"/>
+        <Label fx:id="flavorTitle1" alignment="CENTER" layoutX="431.0" layoutY="391.0" prefHeight="31.0"
+               prefWidth="124.0" text="Label">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label fx:id="flavorTitle2" alignment="CENTER" contentDisplay="CENTER" layoutX="629.0" layoutY="391.0"
+               prefHeight="31.0" prefWidth="124.0" text="Label">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label fx:id="flavorTitle3" alignment="CENTER" layoutX="837.0" layoutY="391.0" prefHeight="31.0"
+               prefWidth="124.0" text="Label">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="inStrainName" layoutX="38.0" layoutY="197.0" prefHeight="27.0" prefWidth="200.0"
+                   promptText="Type Strain Name"/>
+        <Button layoutX="274.0" layoutY="197.0" mnemonicParsing="false" onAction="#showSearchResult" prefHeight="27.0"
+                prefWidth="103.0" text="Search"/>
+        <Button layoutX="69.0" layoutY="145.0" mnemonicParsing="false" onAction="#showSativaStrains" text="Sativa"/>
+        <Button layoutX="177.0" layoutY="145.0" mnemonicParsing="false" onAction="#showHybridStrains" text="Hybrid"/>
+        <Button layoutX="290.0" layoutY="145.0" mnemonicParsing="false" onAction="#showIndicaStrains" text="Indica"/>
+        <Label alignment="CENTER" layoutX="80.0" layoutY="110.0" prefHeight="23.0" prefWidth="261.0"
+               text="Show results by strain race" textAlignment="CENTER">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Button layoutX="138.0" layoutY="64.0" mnemonicParsing="false" onAction="#showAllStrains" prefHeight="27.0"
+                prefWidth="133.0" text="Show all Strains"/>
+        <ListView fx:id="strainMedicalList" layoutX="618.0" layoutY="642.0" prefHeight="133.0" prefWidth="156.0"/>
+        <Label alignment="CENTER" layoutX="431.0" layoutY="600.0" prefHeight="31.0" prefWidth="156.0" text="Positive :">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="620.0" layoutY="600.0" prefHeight="31.0" prefWidth="156.0" text="Medical :">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="805.0" layoutY="601.0" prefHeight="29.0" prefWidth="156.0" text="Negative :">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="620.0" layoutY="577.0" prefHeight="17.0" prefWidth="156.0"
+               text="Strain Effects ">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label fx:id="resultsCount" layoutX="263.0" layoutY="778.0" prefHeight="17.0" prefWidth="114.0" text="Label"/>
+        <Label fx:id="raceStrainTitle" alignment="CENTER" layoutX="634.0" layoutY="122.0" prefHeight="17.0"
+               prefWidth="114.0" text="Label">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <ScrollPane fx:id="textPan" layoutX="429.0" layoutY="440.0" prefHeight="125.0" prefWidth="534.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0"/>
+            </content>
+        </ScrollPane>
+        <Label alignment="CENTER" layoutX="634.0" layoutY="368.0" prefHeight="23.0" prefWidth="114.0"
+               text="Strain Flavors">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

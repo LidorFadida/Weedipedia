@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #E1E5C3 #E1E5C3;" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.SplashController">
+    <children>
+        <ImageView fx:id="splashImage" fitHeight="580.0" fitWidth="650.0" layoutX="190.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true" />
+        <Label alignment="CENTER" layoutX="250.0" layoutY="26.0" prefHeight="67.0" prefWidth="529.0" text="Please Wait">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+      <Label fx:id="updateLabel" alignment="CENTER" layoutX="250.0" layoutY="93.0" prefHeight="67.0" prefWidth="529.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
