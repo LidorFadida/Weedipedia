@@ -10,4 +10,4 @@ project lays on :
 © http://strainapi.evanbusse.com/ ©
 various API end points.
 
-![Alt text](https://ibb.co/b58GC47) ![Alt text](https://ibb.co/yS7F4PM) 
+![Alt text](https://i.ibb.co/23fpCz5/Screen-Shot-2020-11-05-at-2-27-30.png) ![Alt text](https://i.ibb.co/16jGzQp/Screen-Shot-2020-11-05-at-3-09-05.png) 
